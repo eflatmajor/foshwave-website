@@ -3,7 +3,7 @@
     <nav class="bg-gray-900 text-lg">
       <ul>
         <li class="ml-8">
-          <img src="foshwave.png" alt="Foshwave" title="Foshwave" height="32px" width="32px" />
+          <img src="/foshwave.png" alt="Foshwave" title="Foshwave" height="32px" width="32px" />
         </li>
 
         <li id="nav-home">

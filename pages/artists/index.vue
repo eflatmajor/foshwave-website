@@ -5,7 +5,7 @@
         <nuxt-link :to="artist.path">
           <h3 :class="`text-${artist.colour}-300`">{{ artist.name }}</h3>
 
-          <img :src="`avatars/${artist.avatar}`" height="128px" width="128px" class="border-4 border-solid border-black shadow-xl shadow-black" />
+          <img :src="`/avatars/${artist.avatar}`" height="128px" width="128px" class="border-4 border-solid border-black shadow-xl shadow-black" />
         </nuxt-link>
       </li>
     </ul>
