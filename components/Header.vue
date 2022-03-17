@@ -64,13 +64,13 @@
 
         <li>
           <a href="https://twitter.com/foshwavenoises/" target="_blank" title="View our Twitter account.">
-            <img src="/logos/twitter2.png" height="32px" width="32px" alt="Twitter" />
+            <img src="/logos/twitter.png" height="32px" width="32px" alt="Twitter" />
           </a>
         </li>
 
         <li>
           <a href="https://www.youtube.com/channel/UC8Q9O2-SHQC_aYx9nb6MsqA" target="_blank" title="View our YouTube account.">
-            <img src="/logos/youtube2.png" height="32px" width="32px" alt="YouTube" />
+            <img src="/logos/youtube.png" height="32px" width="32px" alt="YouTube" />
           </a>
         </li>
       </ul>
