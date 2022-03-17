@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h3>About Foshwave</h3>
+    <h1 class="text-red-300 text-5xl ml-16 mt-16">
+      About Us
+    </h1>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="text-blue-300 text-5xl ml-16 mt-16">
-      Contact Us
+    <h1 class="text-indigo-300 text-5xl ml-16 mt-16">
+      Our Blog
     </h1>
   </div>
 </template>

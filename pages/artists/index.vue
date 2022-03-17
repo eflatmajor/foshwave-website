@@ -1,5 +1,9 @@
 <template>
   <div>
+    <h1 class="text-green-300 text-5xl ml-16 mt-16">
+      Artists
+    </h1>
+
     <ul id="artists" class="grid grid-cols-5 gap-4">
       <li v-for="artist in artists" :key="artist.id" :class="[`hover:bg-${artist.colour}-900`, 'border-2', 'border-solid', `border-transparent`, `hover:border-${artist.colour}-500`]">
         <nuxt-link :to="artist.path">
