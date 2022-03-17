@@ -1,0 +1,20 @@
+---
+id: 
+psn: 
+name: 
+aliases:
+  - 
+dob: 
+roles:
+  - 
+genres:
+  - 
+tools:
+  - 
+links:
+  - icon: 
+    name: 
+    url: 
+colour: 
+avatar: 
+---
