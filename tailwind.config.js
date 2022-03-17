@@ -1,5 +1,34 @@
+
+// tailwind.config.js
+
 module.exports = {
-  purge: [],
+  purge: {
+    content: ['./src/**/*.html'],
+    safelist: [
+      'hover:bg-slate-900',
+      'hover:bg-gray-900',
+      'hover:bg-zinc-900',
+      'hover:bg-neutral-900',
+      'hover:bg-stone-900',
+      'hover:bg-red-900',
+      'hover:bg-orange-900',
+      'hover:bg-amber-900',
+      'hover:bg-yellow-900',
+      'hover:bg-lime-900',
+      'hover:bg-green-900',
+      'hover:bg-emerald-900',
+      'hover:bg-teal-900',
+      'hover:bg-cyan-900',
+      'hover:bg-sky-900',
+      'hover:bg-blue-900',
+      'hover:bg-indigo-900',
+      'hover:bg-violet-900',
+      'hover:bg-purple-900',
+      'hover:bg-fuchsia-900',
+      'hover:bg-pink-900',
+      'hover:bg-rose-900',
+    ]
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
