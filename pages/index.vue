@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="bg-gray-900 mx-16 mt-16 p-8 rounded-lg text-xl max-w-6xl mx-auto drop-shadow-2xl">
+    <section class="section">
       <h1>
         Welcome to Foshwave
       </h1>
@@ -48,10 +48,6 @@ export default Vue.extend({
 
   h3 {
     @apply text-purple-300 text-xl mb-4;
-  }
-
-  p {
-    margin: 1em;
   }
 }
 </style>

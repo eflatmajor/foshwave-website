@@ -42,15 +42,7 @@
           </nuxt-link>
         </li>
 
-        <!--
-          <li style="margin-left: auto">
-          <a href="#" target="_blank" title="View our Spotify account.">
-            <img src="/logos/spotify.png" height="32px" width="32px" alt="Spotify" />
-          </a>
-        </li>
-        -->
-
-        <li style="margin-left: auto">
+        <li class="ml-auto">
           <a href="https://soundcloud.com/foshwavenoises" target="_blank" title="View our SoundCloud account.">
             <img src="/logos/soundcloud.png" height="32px" width="32px" alt="SoundCloud" />
           </a>
@@ -84,7 +76,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss">
+@layer components {
+  section.section {
+    @apply bg-gray-900 mx-16 mt-16 p-8 rounded-lg text-xl max-w-6xl mx-auto drop-shadow-2xl;
+  }
+
+  section.section p {
+    margin: 1em;
+  }
+  section.section p:last-child {
+    margin-bottom: 0;
+  }
+}
+
 nav {
   text-transform: uppercase;
 }
