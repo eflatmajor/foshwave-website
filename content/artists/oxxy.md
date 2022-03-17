@@ -15,6 +15,7 @@ links:
     name: 
     url: 
 avatar: oxxy.png
+colour: emerald
 ---
 
 <!-- @TODO: Ask which links to prioritise. -->
