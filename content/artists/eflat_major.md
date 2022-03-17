@@ -33,6 +33,9 @@ links:
   - icon: youtube
     name: YouTube
     url: https://youtube.com/channel/UCcRtwGxusfyekgnr--pTALw
+  - icon: apple
+    name: Apple Music
+    url: https://music.apple.com/us/artist/eflat-major/1558962016
 colour: purple
 avatar: eb.png
 ---
