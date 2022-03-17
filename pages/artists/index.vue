@@ -1,11 +1,11 @@
 <template>
   <div>
     <ul id="artists" class="grid grid-cols-5 gap-4">
-      <li v-for="artist in artists" :key="artist.id" :class="`hover:bg-${artist.colour}-900`">
+      <li v-for="artist in artists" :key="artist.id" :class="[`hover:bg-${artist.colour}-900`, 'border-2', 'border-solid', `border-transparent`, `hover:border-${artist.colour}-500`]">
         <nuxt-link :to="artist.path">
           <h3 :class="`text-${artist.colour}-300`">{{ artist.name }}</h3>
 
-          <img :src="`/avatars/${artist.avatar}`" height="128px" width="128px" class="border-4 border-solid border-black shadow-xl shadow-black" />
+          <img :src="`/avatars/${artist.avatar}`" height="128px" width="128px" :class="['border-4', 'border-solid', `border-${artist.colour}-500`, 'shadow-xl', 'shadow-black']" />
         </nuxt-link>
       </li>
     </ul>
@@ -33,13 +33,13 @@ ul {
 
 ul#artists li {
   margin: 2em;
-  border: 2px solid transparent;
-  /* background-color: red; */
+  border-width: 2px;
+  border-style: solid;
   border-radius: 24px;
 }
 
 ul#artists li:hover {
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 ul#artists li a {
