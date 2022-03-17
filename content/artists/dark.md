@@ -18,5 +18,5 @@ links:
     name: SoundCloud
     url: https://soundcloud.com/user-820602180
 colour: orange
-avatar: 
+avatar: dark.png
 ---
