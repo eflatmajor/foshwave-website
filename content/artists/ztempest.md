@@ -1,7 +1,7 @@
 ---
 id: zTempest
 psn: zTempest31
-name: OXXY
+name: zTempest
 aliases:
   - zTempest31
 dob: "Unknown"
@@ -25,4 +25,5 @@ links:
     name: Spotify
     url: https://open.spotify.com/artist/3eDGnb38fWk847qiJ4j449
 avatar: ztempest.png
+colour: fuchsia
 ---
