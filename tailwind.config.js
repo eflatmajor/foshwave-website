@@ -1,6 +1,3 @@
-
-// tailwind.config.js
-
 module.exports = {
   purge: {
     content: ['./src/**/*.html'],
@@ -27,6 +24,29 @@ module.exports = {
       'hover:bg-fuchsia-900',
       'hover:bg-pink-900',
       'hover:bg-rose-900',
+
+      'text-slate-300',
+      'text-gray-300',
+      'text-zinc-300',
+      'text-neutral-300',
+      'text-stone-300',
+      'text-red-300',
+      'text-orange-300',
+      'text-amber-300',
+      'text-yellow-300',
+      'text-lime-300',
+      'text-green-300',
+      'text-emerald-300',
+      'text-teal-300',
+      'text-cyan-300',
+      'text-sky-300',
+      'text-blue-300',
+      'text-indigo-300',
+      'text-violet-300',
+      'text-purple-300',
+      'text-fuchsia-300',
+      'text-pink-300',
+      'text-rose-300',
     ]
   },
   darkMode: 'class', // or 'media' or 'class'
