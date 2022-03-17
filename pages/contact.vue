@@ -14,18 +14,18 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 @layer components {
   h1 {
-   @apply text-blue-300 text-5xl mb-4; 
+   @apply text-blue-500 text-5xl mb-4; 
   }
 
   h2 {
-    @apply text-blue-300 text-3xl mb-4
+    @apply text-blue-500 text-3xl mb-4
   }
 
   h3 {
-    @apply text-blue-300 text-xl mb-4;
+    @apply text-blue-500 text-xl mb-4;
   }
 }
 </style>

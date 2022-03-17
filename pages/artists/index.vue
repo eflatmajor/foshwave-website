@@ -1,19 +1,19 @@
 <template>
-  <div>
+  <section class="section mb-14">
     <h1>
       Artists
     </h1>
 
-    <ul id="artists" class="grid grid-cols-5 gap-4">
+    <ul id="artists" class="grid grid-cols-4 gap-2">
       <li v-for="artist in artists" :key="artist.id" :class="[`hover:bg-${artist.colour}-900`, 'border-2', 'border-solid', `border-transparent`, `hover:border-${artist.colour}-500`]">
         <nuxt-link :to="artist.path">
-          <h3 :class="`text-${artist.colour}-300`">{{ artist.name }}</h3>
+          <h4 :class="`text-${artist.colour}-300`">{{ artist.name }}</h4>
 
           <img :src="`/avatars/${artist.avatar}`" height="128px" width="128px" :class="['border-4', 'border-solid', `border-${artist.colour}-500`, 'shadow-xl', 'shadow-black']" />
         </nuxt-link>
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -30,23 +30,19 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 @layer components {
   h1 {
-   @apply text-green-300 text-5xl mb-4; 
+    @apply text-green-500 text-5xl mb-4;
   }
 
   h2 {
-    @apply text-green-300 text-3xl mb-4
+    @apply text-green-500 text-3xl mb-4
   }
 
   h3 {
-    @apply text-green-300 text-xl mb-4;
+    @apply text-green-500 text-xl mb-4;
   }
-}
-
-ul {
-  display: flex;
 }
 
 ul#artists li {
@@ -64,7 +60,7 @@ ul#artists li a {
   padding: 1em;
 }
 
-ul li a h3 {
+ul li a h4 {
   font-size: 22px;
   text-align: center;
   font-weight: bold;
