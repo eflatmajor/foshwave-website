@@ -2,7 +2,7 @@
 id: artificial
 name: Artificial.Music
 aliases:
-	- Aryll
+  - Aryll
 dob: "Unknown"
 roles:
   - Musician
