@@ -10,9 +10,12 @@ roles:
   - Musician
   - Vocalist
 genres:
-  - 
-tools:
-  - 
+  - Ambient
+  - Dubstep
+  - Indie
+  - Chillout
+  - Lofi
+tools: []
 links:
   - icon: spotify
     name: Spotify

@@ -7,7 +7,13 @@ aliases:
 dob: "Unknown"
 roles:
   - Musician
-genres: []
+genres:
+  - Ambient
+  - Chillout
+  - Lofi
+  - Orchestral
+  - Classical
+  - Trap
 tools:
   - Dreams
   - FL Studio

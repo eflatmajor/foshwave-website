@@ -6,13 +6,21 @@ aliases:
   - 
 dob: "Unknown"
 roles:
-  - 
+  - FoshCEO
 genres:
-  - 
+  - Ambient
+  - Drum 'n' Bass
+  - House
+  - Indie
+  - Chillout
+  - Lofi
+  - Orchestral
+  - Classical
+  - Future Bass
+  - Trap
 tools:
   - Dreams
   - FL Studio
-  - FoshCEO
 links:
   - icon: twitter
     name: Twitter

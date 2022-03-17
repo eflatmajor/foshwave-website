@@ -7,7 +7,11 @@ aliases:
 dob: "Unknown"
 roles:
   - Musician
-genres: []
+genres:
+  - Dubstep
+  - House
+  - Future Bass
+  - Trap
 tools:
   - FL Studio
 links:

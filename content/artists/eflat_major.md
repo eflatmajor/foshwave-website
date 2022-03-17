@@ -10,11 +10,11 @@ roles:
   - Musician
   - Web Developer
 genres:
-  - ambient
-  - classical
-  - electronica
-  - experimental
-  - orchestral
+  - Ambient
+  - Classical
+  - Electronica
+  - Experimental
+  - Orchestral
 tools:
   - Dreams
 links:

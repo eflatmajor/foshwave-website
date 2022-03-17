@@ -8,7 +8,13 @@ aliases:
 dob: "Unknown"
 roles:
   - Musician
-genres: []
+genres:
+  - Drum 'n' Bass
+  - House
+  - Indie
+  - Chillout
+  - Lofi
+  - Future Bass
 tools:
   - FL Studio
   - Audacity

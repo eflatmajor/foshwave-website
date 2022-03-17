@@ -7,7 +7,15 @@ aliases:
 dob: "Unknown"
 roles:
   - Musician
-genres: []
+genres:
+  - Ambient
+  - Drum 'n' Bass
+  - Hyperpop
+  - Indie
+  - Chillout
+  - Lofi
+  - Orchestral
+  - Classical
 tools:
   - Dreams
 links:

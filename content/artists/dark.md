@@ -9,7 +9,11 @@ dob: "Unknown"
 roles:
   - Musician
   - The Master of Masters
-genres: []
+genres:
+  - Ambient
+  - Drum 'n' Bass
+  - Orchestral
+  - Classical
 tools:
   - Dreams
   - Ableton
