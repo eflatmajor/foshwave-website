@@ -39,7 +39,7 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 @layer base {
   h1 {
-   @apply text-purple-500 text-5xl mb-4; 
+   @apply text-purple-500 text-5xl mb-4 pb-6 border-purple-500 border-b-2 border-solid; 
   }
 
   h2 {

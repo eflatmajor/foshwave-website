@@ -17,7 +17,7 @@ export default {
 <style lang="postcss" scoped>
 @layer components {
   h1 {
-   @apply text-indigo-500 text-5xl mb-4; 
+   @apply text-indigo-500 text-5xl mb-4 pb-6 border-indigo-500 border-b-2 border-solid; 
   }
 
   h2 {
