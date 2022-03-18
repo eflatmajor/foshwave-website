@@ -2,7 +2,7 @@
   <header>
     <nav class="bg-gray-900 text-lg">
       <ul>
-        <li class="ml-8">
+        <li class="mr-4">
           <img src="/foshwave.png" alt="Foshwave" title="Foshwave" height="32px" width="32px" />
         </li>
 
@@ -41,30 +41,6 @@
             Posts
           </nuxt-link>
         </li>
-
-        <li class="ml-auto">
-          <a href="https://soundcloud.com/foshwavenoises" target="_blank" title="View our SoundCloud account.">
-            <img src="/logos/soundcloud.png" height="32px" width="32px" alt="SoundCloud" />
-          </a>
-        </li>
-
-        <li>
-          <a href="https://discord.gg/2Cd6eDMBtp" target="_blank" title="Join our Discord server.">
-            <img src="/logos/discord.png" height="32px" width="32px" alt="Discord" />
-          </a>
-        </li>
-
-        <li>
-          <a href="https://twitter.com/foshwavenoises/" target="_blank" title="View our Twitter account.">
-            <img src="/logos/twitter.png" height="32px" width="32px" alt="Twitter" />
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.youtube.com/channel/UC8Q9O2-SHQC_aYx9nb6MsqA" target="_blank" title="View our YouTube account.">
-            <img src="/logos/youtube.png" height="32px" width="32px" alt="YouTube" />
-          </a>
-        </li>
       </ul>
     </nav>
   </header>
@@ -80,7 +56,27 @@ export default {
 @layer components {
   section.section {
     @apply bg-gray-900 mx-16 mt-16 p-8 rounded-lg text-xl max-w-6xl mx-auto drop-shadow-2xl;
+    position: relative;
+    /* background-clip: border-box; */
   }
+  /*
+  section.section::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/foshwave.png);
+    background-position: top right;
+    background-size: 186px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: content-box, padding-box;
+    opacity: 0.1;
+  }
+  */
 
   section.section p {
     margin: 1em;
@@ -95,16 +91,28 @@ nav {
 }
 
 nav ul {
+  height: 64px;
   display: flex;
-  padding-right: 1em;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
 }
 
-nav ul li {
-  margin: 1em 0.5em;
+nav ul li.nav-button {
+  height: 64px;
+  line-height: 64px;
+  display: flex;
+}
+
+nav ul li.nav-button {
+  margin: 0 0.25em;
+}
+nav ul li.social-button {
+  margin: 0 0.5em;
 }
 
 nav ul li.nav-button a {
-  padding: 1.1em;
+  padding: 0 0.8em;
 }
 
 .nuxt-link-exact-active {

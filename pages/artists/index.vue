@@ -1,8 +1,12 @@
 <template>
   <section class="section mb-14">
-    <h1>
+    <h1 class="mb-0">
       Artists
     </h1>
+
+    <div class="bg-green-500" style="height: 150px; display: none;">
+
+    </div>
 
     <ul id="artists" class="grid grid-cols-4 gap-2">
       <li v-for="artist in artists" :key="artist.id" :class="[`hover:bg-${artist.colour}-900`, 'border-2', 'border-solid', `border-transparent`, `hover:border-${artist.colour}-500`]">
@@ -33,7 +37,7 @@ export default {
 <style lang="postcss" scoped>
 @layer components {
   h1 {
-    @apply text-green-500 text-5xl mb-4 pb-6 border-green-500 border-b-2 border-solid;
+    @apply text-green-500 text-5xl pb-6 border-green-500 border-b-2 border-solid; /* mb-4 */
   }
 
   h2 {
@@ -50,6 +54,7 @@ ul#artists li {
   border-width: 2px;
   border-style: solid;
   border-radius: 24px;
+  list-style-type: none;
 }
 
 ul#artists li:hover {
