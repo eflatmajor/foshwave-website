@@ -1,6 +1,6 @@
 <template>
   <div class="dual-section">
-    <section class="left-section">
+    <section class="left-section min-w-max">
       <h2>
         Search
       </h2>
@@ -49,13 +49,13 @@
       </ul>
     </section>
 
-    <section class="right-section">
+    <section class="right-section min-w-max">
       <h1 class="mb-0">
         Artists
       </h1>
 
       <div v-if="filteredArtists.length">
-        <ul id="artists" class="grid grid-cols-4 gap-2">
+        <ul id="artists" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2">
           <li v-for="artist in filteredArtists" :key="artist.id" :class="[`hover:bg-${artist.colour}-900`, 'border-2', 'border-solid', `border-transparent`, `hover:border-${artist.colour}-500`]">
             <nuxt-link :to="artist.path">
               <h4 :class="`text-${artist.colour}-300`">{{ artist.name }}</h4>
