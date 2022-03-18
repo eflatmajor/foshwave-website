@@ -44,7 +44,7 @@
       <p v-else>No roles found.</p>
 
       <div :class="[bgColour, 'separator']"></div>
-      
+
       <h2 :class="colours">
         Genres
       </h2>
@@ -63,8 +63,10 @@
     <section class="right-section">
       <img id="avatar" :src="avatar" alt="Avatar" width="128px" height="128px" :class="['float-right', `border-${artist.colour}-500`]" />
 
-      <h1 :class="['mb-0', colours]">
+      <h1 :class="['mb-0', colours]" style="display: flex;">
         {{ artist.name }}
+
+        <span :class="`text-${artist.colour}-600`" v-if="hasAliases">aka {{ aliases }}</span>
       </h1>
 
       <nuxt-content :document="artist" />
@@ -96,6 +98,10 @@ export default {
   },
 
   computed: {
+    aliases() {
+      return this.artist.aliases.join(', ')
+    },
+    
     colours() {
       return [
         `text-${this.artist.colour}-500`,
@@ -117,6 +123,14 @@ export default {
       }
 
       return this.artist.links.length > 0;
+    },
+
+    hasAliases() {
+      if ( ! this.artist.aliases) {
+        return false;
+      }
+
+      return this.artist.aliases.length > 0;
     }
   }
 }
@@ -126,6 +140,12 @@ export default {
 @layer components {
   h1 {
     @apply text-5xl pb-6 border-b-2 border-solid mb-4;
+  }
+
+  h1 span {
+    font-size: 0.5em !important;
+    margin-left: 1em;
+    margin-top: 0.65em;
   }
 
   h2 {
