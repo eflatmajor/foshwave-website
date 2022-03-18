@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "ableton",
+    "name": "Ableton",
+    "icon": "ableton.png"
+  },
+  {
+    "slug": "fl",
+    "name": "FL Studio",
+    "icon": "fl.png"
+  },
+  {
+    "slug": "logic",
+    "name": "Logic",
+    "icon": "logic.png"
+  },
+  {
+    "slug": "dreams",
+    "name": "Dreams",
+    "icon": "dreams.png"
+  },
+  {
+    "slug": "audacity",
+    "name": "Audacity",
+    "icon": "audacity.png"
+  },
+  {
+    "slug": "bitwig",
+    "name": "Bitwig",
+    "icon": "bitwig.png"
+  },
+  {
+    "slug": "gimp",
+    "name": "GIMP",
+    "icon": "gimp.png"
+  },
+  {
+    "slug": "paint",
+    "name": "Paint.net",
+    "icon": "paint.png"
+  },
+  {
+    "slug": "photoshop",
+    "name": "Photoshop",
+    "icon": "photoshop.png"
+  },
+  {
+    "slug": "csp",
+    "name": "Clip Studio Paint",
+    "icon": "csp.png"
+  },
+  {
+    "slug": "aftereffects",
+    "name": "After Effects",
+    "icon": "ae.png"
+  },
+  {
+    "slug": "davinci",
+    "name": "DaVinci Resolve",
+    "icon": "davinci.png"
+  }
+]

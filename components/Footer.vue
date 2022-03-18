@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-16">
+  <footer>
     <nav class="bg-gray-900 text-lg">
       <ul>
         <li class="mr-4">

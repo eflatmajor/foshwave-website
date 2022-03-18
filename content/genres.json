@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "ambient",
+    "name": "Ambient",
+    "emoji": "🐚"
+  },
+  {
+    "slug": "dnb",
+    "name": "Drum 'n' Bass",
+    "emoji": "🥁"
+  },
+  {
+    "slug": "house",
+    "name": "House",
+    "emoji": "🏠"
+  },
+  {
+    "slug": "hyperpop",
+    "name": "Hyperpop",
+    "emoji": "🤪"
+  },
+  {
+    "slug": "chillout",
+    "name": "Chillout",
+    "emoji": "😎"
+  },
+  {
+    "slug": "lofi",
+    "name": "Lofi",
+    "emoji": "😎"
+  },
+  {
+    "slug": "indie",
+    "name": "Indie",
+    "emoji": "🎸"
+  },
+  {
+    "slug": "orchestral",
+    "name": "Orchestral",
+    "emoji": "🎻"
+  },
+  {
+    "slug": "classical",
+    "name": "Classical",
+    "emoji": "🎻"
+  },
+  {
+    "slug": "synthwave",
+    "name": "Synthwave",
+    "emoji": "💾"
+  },
+  {
+    "slug": "futurebass",
+    "name": "Future Bass",
+    "emoji": "🛰️"
+  },
+  {
+    "slug": "trap",
+    "name": "Trap",
+    "emoji": "🪤"
+  }
+]

@@ -1,35 +1,33 @@
 <template>
-  <div>
-    <section class="section">
-      <h1>
-        Welcome to Foshwave
-      </h1>
+  <section class="main-section">
+    <h1>
+      Welcome to Foshwave
+    </h1>
 
-      <h2>
-        What is Foshwave?
-      </h2>
+    <h2>
+      What is Foshwave?
+    </h2>
 
-      <p>I'm glad you asked!</p>
+    <p>I'm glad you asked!</p>
 
-      <p>Foshwave is a music label/collective/community with roots in electronic music, that specializes in thematic compilations and discussions, and releases music in support of marine-focused charities.</p>
+    <p>Foshwave is a music label/collective/community with roots in electronic music, that specializes in thematic compilations and discussions, and releases music in support of marine-focused charities.</p>
 
-      <h2>
-        Can I release my music here?
-      </h2>
+    <h2>
+      Can I release my music here?
+    </h2>
 
-      <p>Of course! Foshwave has little to no quality control for song releases, so if you have a song you'd like to release with Fosh, send it over!</p>
-      
-      <p>Keep in mind that Foshwave is primarily electronically focused, thus, a 46 minute recording of throat singing on a cellphone mic probably won't make the cut. While there are some basic standards for releases, Foshwave itself is very flexible in terms of genre and style.</p>
+    <p>Of course! Foshwave has little to no quality control for song releases, so if you have a song you'd like to release with Fosh, send it over!</p>
+    
+    <p>Keep in mind that Foshwave is primarily electronically focused, thus, a 46 minute recording of throat singing on a cellphone mic probably won't make the cut. While there are some basic standards for releases, Foshwave itself is very flexible in terms of genre and style.</p>
 
-      <h2>
-        How much does that cost?
-      </h2>
+    <h2>
+      How much does that cost?
+    </h2>
 
-      <p>We try our hardest to provide a dynamic space to release, promote, and to share music. While we don't currently charge for distribution for Foshwave, it is not free for us, therefore we can't keep it free forever.</p>
-      
-      <p>Distribution will stay free for now, but we may request some financial support in the future.</p>
-    </section>
-  </div>
+    <p>We try our hardest to provide a dynamic space to release, promote, and to share music. While we don't currently charge for distribution for Foshwave, it is not free for us, therefore we can't keep it free forever.</p>
+    
+    <p>Distribution will stay free for now, but we may request some financial support in the future.</p>
+  </section>
 </template>
 
 <script lang="ts">

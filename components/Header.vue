@@ -54,10 +54,22 @@ export default {
 
 <style lang="postcss">
 @layer components {
-  section.section {
-    @apply bg-gray-900 mx-16 mt-16 p-8 rounded-lg text-xl max-w-6xl mx-auto drop-shadow-2xl;
-    position: relative;
-    /* background-clip: border-box; */
+  section.main-section {
+    @apply bg-gray-900 mx-16 my-16 p-8 rounded-lg text-xl max-w-6xl mx-auto drop-shadow-2xl;
+    /* position: relative; */
+  }
+
+  div.dual-section {
+    @apply mx-auto p-16;
+    display: flex;
+  }
+
+  section.left-section {
+    @apply bg-gray-900 p-8 mr-16 rounded-lg text-xl w-96 drop-shadow-2xl;
+  }
+  section.right-section {
+    flex: 1;
+    @apply bg-gray-900 p-8 rounded-lg text-xl drop-shadow-2xl; /* max-w-4xl */
   }
   /*
   section.section::after {
@@ -78,10 +90,10 @@ export default {
   }
   */
 
-  section.section p {
+  section.main-section p {
     margin: 1em;
   }
-  section.section p:last-child {
+  section.main-section p:last-child {
     margin-bottom: 0;
   }
 }

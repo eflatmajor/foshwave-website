@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "producer",
+    "name": "Producer",
+    "emoji": "🎛️"
+  },
+  {
+    "slug": "casual",
+    "name": "Casual",
+    "emoji": "🕵️"
+  },
+  {
+    "slug": "comp",
+    "name": "Compilation Participant",
+    "emoji": "🎛️"
+  },
+  {
+    "slug": "musician",
+    "name": "Musician",
+    "emoji": "🎵"
+  },
+  {
+    "slug": "artist",
+    "name": "Artist",
+    "emoji": "🎨"
+  },
+  {
+    "slug": "vocalist",
+    "name": "Vocalist",
+    "emoji": "🎙️"
+  }
+]

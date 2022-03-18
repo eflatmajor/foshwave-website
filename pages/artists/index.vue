@@ -1,34 +1,114 @@
 <template>
-  <section class="section mb-14">
-    <h1 class="mb-0">
-      Artists
-    </h1>
+  <div class="dual-section">
+    <section class="left-section">
+      <h2>
+        Search
+      </h2>
 
-    <div class="bg-green-500" style="height: 150px; display: none;">
+      <input type="text" class="bg-gray-800 p-4 rounded-md w-full" placeholder="Find an Artist" v-model="searchQuery" />
 
-    </div>
+      <div class="separator"></div>
 
-    <ul id="artists" class="grid grid-cols-4 gap-2">
-      <li v-for="artist in artists" :key="artist.id" :class="[`hover:bg-${artist.colour}-900`, 'border-2', 'border-solid', `border-transparent`, `hover:border-${artist.colour}-500`]">
-        <nuxt-link :to="artist.path">
-          <h4 :class="`text-${artist.colour}-300`">{{ artist.name }}</h4>
+      <h2>
+        Filter
+      </h2>
 
-          <img :src="`/avatars/${artist.avatar}`" height="128px" width="128px" :class="['border-4', 'border-solid', `border-${artist.colour}-500`, 'shadow-xl', 'shadow-black']" />
-        </nuxt-link>
-      </li>
-    </ul>
-  </section>
+      <h3>
+        Genre
+      </h3>
+
+      <!-- <pre>{{ genres }}</pre> -->
+
+      <ul>
+        <li v-for="genre in genres" :key="genre.slug" class="p-2">
+          {{ genre.emoji }} {{ genre.name}}
+        </li>
+      </ul>
+
+      <h3>
+        Roles
+      </h3>
+
+      <ul>
+        <li v-for="role in roles" :key="role.slug" class="p-2">
+          {{ role.emoji }} {{ role.name}}
+        </li>
+      </ul>
+
+      <h3>
+        Tools
+      </h3>
+
+      <ul>
+        <li v-for="role in roles" :key="role.slug" class="p-2">
+          {{ role.emoji }} {{ role.name}}
+        </li>
+      </ul>
+    </section>
+
+    <section class="right-section">
+      <h1 class="mb-0">
+        Artists
+      </h1>
+      <!--
+      <div class="bg-green-500">
+        <p>Search query: {{ searchQuery }}</p>
+      </div>
+      -->
+
+      <div v-if="filteredArtists.length">
+        <ul id="artists" class="grid grid-cols-4 gap-2">
+          <li v-for="artist in filteredArtists" :key="artist.id" :class="[`hover:bg-${artist.colour}-900`, 'border-2', 'border-solid', `border-transparent`, `hover:border-${artist.colour}-500`]">
+            <nuxt-link :to="artist.path">
+              <h4 :class="`text-${artist.colour}-300`">{{ artist.name }}</h4>
+
+              <img :src="`/avatars/${artist.avatar}`" height="128px" width="128px" :class="['border-4', 'border-solid', `border-${artist.colour}-500`, 'shadow-xl', 'shadow-black']" />
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
+
+      <div v-else>
+        <h2>Not Found</h2>
+
+        <p>No matching artist(s) could be found.</p>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      searchQuery: ''
+    }
+  },
+
   async asyncData ({ $content }) {
     const artists = await $content('artists')
-    .where({ slug: { $ne: "__template__" } })
-    .fetch()
+      .where({ slug: { $ne: "__template__" } })
+      .fetch()
+    
+    const genres = await $content('genres').fetch()    
+
+    const roles = await $content('roles').fetch()    
+
+    const tools = await $content('tools').fetch()    
 
     return {
-      artists
+      artists, genres, roles, tools
+    }
+  },
+
+  computed: {
+    filteredArtists() {
+      if (this.searchQuery.length) {
+        return this.artists.filter((artist) => artist.name.includes(this.searchQuery))
+      }
+      else {
+        return this.artists;
+      }
     }
   }
 }
@@ -37,7 +117,7 @@ export default {
 <style lang="postcss" scoped>
 @layer components {
   h1 {
-    @apply text-green-500 text-5xl pb-6 border-green-500 border-b-2 border-solid; /* mb-4 */
+    @apply text-green-500 text-5xl pb-6 border-green-500 border-b-2 border-solid mb-4;
   }
 
   h2 {
@@ -46,6 +126,12 @@ export default {
 
   h3 {
     @apply text-green-500 text-xl mb-4;
+  }
+
+  div.separator {
+    height: 2px;
+    width: 100%;
+    @apply bg-green-500 my-8;
   }
 }
 
