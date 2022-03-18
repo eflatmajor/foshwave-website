@@ -8,19 +8,19 @@ dob: "Unknown"
 roles:
   - FoshCEO
 genres:
-  - Ambient
-  - Drum 'n' Bass
-  - House
-  - Indie
-  - Chillout
-  - Lofi
-  - Orchestral
-  - Classical
-  - Future Bass
-  - Trap
+  - ambient
+  - dnb
+  - house
+  - indie
+  - chillout
+  - lofi
+  - orchestral
+  - classical
+  - futurebass
+  - trap
 tools:
-  - Dreams
-  - FL Studio
+  - dreams
+  - fl
 links:
   - icon: twitter
     name: Twitter

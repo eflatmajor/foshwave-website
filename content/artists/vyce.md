@@ -10,11 +10,11 @@ roles:
   - Musician
   - Vocalist
 genres:
-  - Ambient
-  - Dubstep
-  - Indie
-  - Chillout
-  - Lofi
+  - ambient
+  - dubstep
+  - indie
+  - chillout
+  - lofi
 tools: []
 links:
   - icon: spotify

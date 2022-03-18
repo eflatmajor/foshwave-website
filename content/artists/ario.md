@@ -10,7 +10,7 @@ roles:
   - Musician
 genres: []
 tools:
-  - FL Studio
+  - fl
 links:
   - icon: youtube
     name: YouTube

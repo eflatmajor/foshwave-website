@@ -8,16 +8,16 @@ dob: "Unknown"
 roles:
   - Musician
 genres:
-  - Ambient
-  - Drum 'n' Bass
-  - Hyperpop
-  - Indie
-  - Chillout
-  - Lofi
-  - Orchestral
-  - Classical
+  - ambient
+  - dnb
+  - hyperpop
+  - indie
+  - chillout
+  - lofi
+  - orchestral
+  - classical
 tools:
-  - Dreams
+  - dreams
 links:
   - icon: soundcloud
     name: SoundCloud

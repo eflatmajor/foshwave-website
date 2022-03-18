@@ -8,15 +8,15 @@ dob: "Unknown"
 roles:
   - Musician
 genres:
-  - Ambient
-  - Chillout
-  - Lofi
-  - Orchestral
-  - Classical
-  - Trap
+  - ambient
+  - chillout
+  - lofi
+  - orchestral
+  - classical
+  - trap
 tools:
-  - Dreams
-  - FL Studio
+  - dreams
+  - fl
 links:
   - icon: soundcloud
     name: SoundCloud

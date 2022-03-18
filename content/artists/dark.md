@@ -10,13 +10,13 @@ roles:
   - Musician
   - The Master of Masters
 genres:
-  - Ambient
-  - Drum 'n' Bass
-  - Orchestral
-  - Classical
+  - ambient
+  - dnb
+  - orchestral
+  - classical
 tools:
-  - Dreams
-  - Ableton
+  - dreams
+  - ableton
 links:
   - icon: soundcloud
     name: SoundCloud

@@ -10,7 +10,7 @@ roles:
   - Musician
 genres: []
 tools:
-  - Bitwig
+  - bitwig
 links:
   - icon: bandcamp
     name: Bandcamp

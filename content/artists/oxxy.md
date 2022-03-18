@@ -8,12 +8,12 @@ dob: "Unknown"
 roles:
   - Musician
 genres:
-  - Dubstep
-  - House
-  - Future Bass
-  - Trap
+  - dubstep
+  - house
+  - futurebass
+  - trap
 tools:
-  - FL Studio
+  - fl
 links:
   - icon: 
     name: 

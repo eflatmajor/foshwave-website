@@ -10,13 +10,13 @@ roles:
   - Musician
   - Web Developer
 genres:
-  - Ambient
-  - Classical
-  - Electronica
-  - Experimental
-  - Orchestral
+  - ambient
+  - classical
+  - electronica
+  - experimental
+  - orchestral
 tools:
-  - Dreams
+  - dreams
 links:
   - icon: soundcloud
     name: SoundCloud

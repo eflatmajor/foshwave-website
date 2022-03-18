@@ -9,17 +9,17 @@ dob: "Unknown"
 roles:
   - Musician
 genres:
-  - Drum 'n' Bass
-  - House
-  - Indie
-  - Chillout
-  - Lofi
-  - Future Bass
+  - dnb
+  - house
+  - indie
+  - chillout
+  - lofi
+  - futurebass
 tools:
-  - FL Studio
-  - Audacity
-  - Photoshop
-  - After Effects
+  - fl
+  - audacity
+  - photoshop
+  - aftereffects
 links:
   - icon: youtube
     name: YouTube
