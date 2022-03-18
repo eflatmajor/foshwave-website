@@ -47,9 +47,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style lang="postcss">
@@ -71,6 +69,11 @@ export default {
     flex: 1;
     @apply bg-gray-900 p-8 rounded-lg text-xl drop-shadow-2xl; /* max-w-4xl */
   }
+
+  section.right-section p {
+    margin: 1em;
+  }
+
   /*
   section.section::after {
     content: ' ';
@@ -95,6 +98,10 @@ export default {
   }
   section.main-section p:last-child {
     margin-bottom: 0;
+  }
+
+  textarea.nuxt-content-editor {
+    @apply bg-gray-700 p-8 rounded-lg text-xl;
   }
 }
 
