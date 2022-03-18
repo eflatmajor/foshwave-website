@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="icon" :alt="name" height="16px" width="16px" /> {{ name }}
+    <img :src="iconUrl" :alt="name" height="64px" width="64px" :title="name" />
   </div>
 </template>
 
@@ -30,6 +30,12 @@ export default {
   props: {
     tool: String,
     tools: Array
+  },
+
+  computed: {
+    iconUrl() {
+      return `/logos/${this.icon}`
+    }
   }
 }
 </script>

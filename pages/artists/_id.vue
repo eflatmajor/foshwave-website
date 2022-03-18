@@ -18,24 +18,10 @@
       <div :class="[bgColour, 'separator']"></div>
 
       <h2 :class="colours">
-        Roles
-      </h2>
-
-      <ul v-if="artist.roles.length">
-        <li v-for="role in artist.roles" :key="role">
-          <role :role="role" :roles="roles" />
-        </li>
-      </ul>
-
-      <p v-else>No roles found.</p>
-
-      <div :class="[bgColour, 'separator']"></div>
-
-      <h2 :class="colours">
         Tools
       </h2>
 
-      <ul v-if="artist.tools.length">
+      <ul id="tools" v-if="artist.tools.length">
         <li v-for="tool in artist.tools" :key="tool">
           <tool :tool="tool" :tools="tools" />
         </li>
@@ -46,10 +32,24 @@
       <div :class="[bgColour, 'separator']"></div>
 
       <h2 :class="colours">
+        Roles
+      </h2>
+
+      <ul id="roles" v-if="artist.roles.length">
+        <li v-for="role in artist.roles" :key="role">
+          <role :role="role" :roles="roles" />
+        </li>
+      </ul>
+
+      <p v-else>No roles found.</p>
+
+      <div :class="[bgColour, 'separator']"></div>
+      
+      <h2 :class="colours">
         Genres
       </h2>
 
-      <ul v-if="artist.genres.length">
+      <ul id="genres" v-if="artist.genres.length">
         <li v-for="genre in artist.genres" :key="genre">
           <genre :genre="genre" :genres="genres" />
         </li>
@@ -157,6 +157,45 @@ export default {
   ul#socials li {
     margin: 0.5em 0;
     justify-self: center;
+  }
+
+  ul#tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+  }
+  ul#tools li {
+    margin: 0.5em 0;
+    justify-self: center;
+  }
+
+  ul#roles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+  }
+  ul#roles li {
+    margin: 0.5em 0;
+    /* justify-self: center; */
+  }
+
+  ul#genres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+  }
+  ul#genres li {
+    margin: 0.5em 0;
+    /* justify-self: center; */
   }
 }
 </style>

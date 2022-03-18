@@ -16,6 +16,16 @@ genres:
   - orchestral
 tools:
   - dreams
+  - logic
+  - fl
+  - audacity
+  - bitwig
+  - gimp
+  - paint
+  - photoshop
+  - csp
+  - aftereffects
+  - davinci
 links:
   - icon: soundcloud
     name: SoundCloud
