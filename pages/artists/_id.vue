@@ -7,7 +7,7 @@
 
       <ul id="socials" class="w-full" v-if="hasLinks">
         <li v-for="link in artist.links" :key="link.slug">
-          <a :href="link.url" :title="`Visit ${link.name}.`">
+          <a :href="link.url" :title="`Visit ${link.name}.`" target="_blank">
             <img :src="`/logos/${link.icon}.png`" height="32px" width="32px" :alt="link.name" />
           </a>
         </li>
@@ -69,7 +69,7 @@
         <span :class="`text-${artist.colour}-600`" v-if="hasAliases">aka {{ aliases }}</span>
       </h1>
 
-      <nuxt-content :document="artist" />
+      <nuxt-content :document="artist" :class="textColour" />
     </section>
   </div>
 </template>
@@ -107,6 +107,10 @@ export default {
         `text-${this.artist.colour}-500`,
         `border-${this.artist.colour}-500`
       ];
+    },
+
+    textColour() {
+      return `text-${this.artist.colour}-500`;
     },
 
     bgColour() {
@@ -217,5 +221,23 @@ export default {
     margin: 0.5em 0;
     /* justify-self: center; */
   }
+}
+</style>
+
+<style lang="postcss">
+div.nuxt-content h2 {
+  @apply text-3xl mb-4;
+}
+div.nuxt-content h3 {
+  @apply text-xl mb-4;
+}
+
+div.nuxt-content p {
+  color: white;
+}
+
+div.nuxt-content p a {
+  font-weight: bold;
+  text-decoration: underline;
 }
 </style>
