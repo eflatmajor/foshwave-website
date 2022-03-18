@@ -1,5 +1,4 @@
 ---
-id: 
 psn: 
 name: 
 aliases:

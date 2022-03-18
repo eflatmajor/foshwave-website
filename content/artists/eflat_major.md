@@ -1,5 +1,4 @@
 ---
-id: eb
 psn: Eflat__Major
 name: Eflat Major
 aliases:

@@ -1,5 +1,4 @@
 ---
-id: artificial
 name: Artificial.Music
 aliases:
   - Aryll

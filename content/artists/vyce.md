@@ -1,5 +1,4 @@
 ---
-id: vyce
 name: VyceReversa
 aliases:
   - ANEW

@@ -1,5 +1,4 @@
 ---
-id: carboluka
 psn: dittatore_game
 name: Carboluka
 aliases:

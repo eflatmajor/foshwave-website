@@ -1,5 +1,4 @@
 ---
-id: dark
 psn: Underoath_77
 name: Dark_Masters
 aliases:

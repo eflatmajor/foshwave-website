@@ -1,5 +1,4 @@
 ---
-id: ario
 name: Ario
 aliases:
   - Ariobama

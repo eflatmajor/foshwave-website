@@ -1,5 +1,4 @@
 ---
-id: laethe
 name: Laethe
 aliases:
   - Cooper

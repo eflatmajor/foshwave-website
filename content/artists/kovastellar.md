@@ -1,5 +1,4 @@
 ---
-id: kovastellar
 name: Kovastellar
 aliases:
   - Rob

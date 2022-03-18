@@ -1,5 +1,4 @@
 ---
-id: hex
 name: HEX+
 aliases:
   - Murphy-u

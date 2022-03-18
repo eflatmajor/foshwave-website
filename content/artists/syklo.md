@@ -1,5 +1,4 @@
 ---
-id: syklo
 name: Syklo
 aliases:
   - Blake

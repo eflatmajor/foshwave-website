@@ -1,5 +1,4 @@
 ---
-id: wyzard
 psn: TheWyzard320
 name: welcome2wyzard
 aliases:

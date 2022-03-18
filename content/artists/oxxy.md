@@ -1,5 +1,4 @@
 ---
-id: oxxy
 name: OXXY
 aliases:
   - Halfprism

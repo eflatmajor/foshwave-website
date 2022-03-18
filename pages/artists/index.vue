@@ -17,7 +17,7 @@
         Genre
       </h3>
 
-      <ul>
+      <ul class="mb-4">
         <li
           v-for="genre in genres"
           :key="genre.slug"
@@ -32,7 +32,7 @@
         Roles
       </h3>
 
-      <ul>
+      <ul class="mb-4">
         <li v-for="role in roles" :key="role.slug" class="p-2" @click="toggleRole(role.slug)">
           <input type="checkbox" :id="role.slug" :name="role.slug" :checked="roleSelected(role.slug)" /> {{ role.emoji }} {{ role.name}}
         </li>
@@ -42,7 +42,7 @@
         Tools
       </h3>
 
-      <ul>
+      <ul class="tools">
         <li v-for="tool in tools" :key="tool.slug" class="p-2" @click="toggleTool(tool.slug)">
           <input type="checkbox" :id="tool.slug" :name="tool.slug" :checked="toolSelected(tool.slug)" /> {{ tool.emoji }} {{ tool.name}}
         </li>

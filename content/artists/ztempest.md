@@ -1,5 +1,4 @@
 ---
-id: zTempest
 psn: zTempest31
 name: zTempest
 aliases:
