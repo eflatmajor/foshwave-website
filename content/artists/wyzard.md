@@ -1,8 +1,7 @@
 ---
 psn: TheWyzard320
 name: welcome2wyzard
-aliases:
-  - 
+aliases: []
 dob: "Unknown"
 roles:
   - fosh_ceo
