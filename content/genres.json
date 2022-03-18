@@ -10,6 +10,16 @@
     "emoji": "🥁"
   },
   {
+    "slug": "electronica",
+    "name": "Electronica",
+    "emoji": "🖥️"
+  },
+  {
+    "slug": "experimental",
+    "name": "Experimental",
+    "emoji": "🧪"
+  },
+  {
     "slug": "house",
     "name": "House",
     "emoji": "🏠"

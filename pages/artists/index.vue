@@ -54,10 +54,6 @@
         Artists
       </h1>
 
-      <div class="bg-green-500">
-        <pre>{{ selectedGenres }}</pre>
-      </div>
-
       <div v-if="filteredArtists.length">
         <ul id="artists" class="grid grid-cols-4 gap-2">
           <li v-for="artist in filteredArtists" :key="artist.id" :class="[`hover:bg-${artist.colour}-900`, 'border-2', 'border-solid', `border-transparent`, `hover:border-${artist.colour}-500`]">
