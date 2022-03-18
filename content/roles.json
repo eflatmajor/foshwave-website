@@ -28,5 +28,20 @@
     "slug": "vocalist",
     "name": "Vocalist",
     "emoji": "🎙️"
+  },
+  {
+    "slug": "master_of_masters",
+    "name": "Master of Masters",
+    "emoji": "⭐"
+  },
+  {
+    "slug": "web_developer",
+    "name": "Web Developer",
+    "emoji": "🤖"
+  },
+  {
+    "slug": "fosh_ceo",
+    "name": "Fosh CEO",
+    "emoji": "💎"
   }
 ]

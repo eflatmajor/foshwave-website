@@ -6,7 +6,7 @@ aliases:
   - lfojohnny
 dob: "1998"
 roles:
-  - Musician
+  - musician
 genres: []
 tools:
   - bitwig

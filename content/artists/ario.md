@@ -6,7 +6,7 @@ aliases:
   - ario_moosic
 dob: "Unknown"
 roles:
-  - Musician
+  - musician
 genres: []
 tools:
   - fl

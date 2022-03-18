@@ -4,7 +4,7 @@ aliases:
   - Aryll
 dob: "Unknown"
 roles:
-  - Musician
+  - musician
 genres: []
 tools:
   - fl

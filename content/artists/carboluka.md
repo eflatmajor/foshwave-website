@@ -5,7 +5,7 @@ aliases:
   - dittatore_game
 dob: "Unknown"
 roles:
-  - Musician
+  - musician
 genres:
   - ambient
   - dnb

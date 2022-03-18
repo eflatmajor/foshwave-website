@@ -5,7 +5,7 @@ aliases:
   - zTempest31
 dob: "Unknown"
 roles:
-  - Musician
+  - musician
 genres:
   - ambient
   - chillout

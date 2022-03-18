@@ -6,7 +6,7 @@ aliases:
   - SykloMusic
 dob: "Unknown"
 roles:
-  - Musician
+  - musician
 genres: []
 tools:
   - fl

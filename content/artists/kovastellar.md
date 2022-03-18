@@ -6,7 +6,7 @@ aliases:
   - ThatRobertDude
 dob: "Unknown"
 roles:
-  - Musician
+  - musician
 genres:
   - dnb
   - house

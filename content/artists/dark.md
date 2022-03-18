@@ -6,8 +6,8 @@ aliases:
   - Underoath_77
 dob: "Unknown"
 roles:
-  - Musician
-  - The Master of Masters
+  - musician
+  - master_of_masters
 genres:
   - ambient
   - dnb

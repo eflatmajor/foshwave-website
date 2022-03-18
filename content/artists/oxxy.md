@@ -5,7 +5,7 @@ aliases:
   - iConsumeOxygen
 dob: "Unknown"
 roles:
-  - Musician
+  - musician
 genres:
   - dubstep
   - house

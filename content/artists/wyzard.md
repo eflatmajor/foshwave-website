@@ -5,7 +5,7 @@ aliases:
   - 
 dob: "Unknown"
 roles:
-  - FoshCEO
+  - fosh_ceo
 genres:
   - ambient
   - dnb

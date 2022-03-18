@@ -6,8 +6,8 @@ aliases:
   - Aural Shaman
 dob: "Unknown"
 roles:
-  - Musician
-  - Vocalist
+  - musician
+  - vocalist
 genres:
   - ambient
   - dubstep

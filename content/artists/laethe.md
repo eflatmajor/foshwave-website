@@ -6,7 +6,7 @@ aliases:
   - whoslaethe
 dob: "Unknown"
 roles:
-  - Musician
+  - musician
 genres: []
 tools: []
 links:

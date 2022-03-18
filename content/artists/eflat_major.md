@@ -6,8 +6,8 @@ aliases:
   - E♭
 dob: "1989-04-02"
 roles:
-  - Musician
-  - Web Developer
+  - musician
+  - web_developer
 genres:
   - ambient
   - classical
