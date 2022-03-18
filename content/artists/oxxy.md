@@ -13,10 +13,10 @@ genres:
   - trap
 tools:
   - fl
-links:
-  - icon: 
-    name: 
-    url: 
+# links:
+#   - icon: 
+#     name: 
+#     url: 
 avatar: oxxy.png
 colour: emerald
 ---

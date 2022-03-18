@@ -2,14 +2,32 @@
   <div class="dual-section">
     <section class="left-section">
       <h2 :class="colours">
+        Socials
+      </h2>
+
+      <ul id="socials" class="w-full" v-if="hasLinks">
+        <li v-for="link in artist.links" :key="link.slug">
+          <a :href="link.url" :title="`Visit ${link.name}.`">
+            <img :src="`/logos/${link.icon}.png`" height="32px" width="32px" :alt="link.name" />
+          </a>
+        </li>
+      </ul>
+
+      <p v-else>No socials found.</p>
+
+      <div :class="[bgColour, 'separator']"></div>
+
+      <h2 :class="colours">
         Roles
       </h2>
 
-      <ul>
+      <ul v-if="artist.roles.length">
         <li v-for="role in artist.roles" :key="role">
           <role :role="role" :roles="roles" />
         </li>
       </ul>
+
+      <p v-else>No roles found.</p>
 
       <div :class="[bgColour, 'separator']"></div>
 
@@ -17,11 +35,13 @@
         Tools
       </h2>
 
-      <ul>
+      <ul v-if="artist.tools.length">
         <li v-for="tool in artist.tools" :key="tool">
           <tool :tool="tool" :tools="tools" />
         </li>
       </ul>
+
+      <p v-else>No tools found.</p>
 
       <div :class="[bgColour, 'separator']"></div>
 
@@ -29,11 +49,13 @@
         Genres
       </h2>
 
-      <ul>
+      <ul v-if="artist.genres.length">
         <li v-for="genre in artist.genres" :key="genre">
           <genre :genre="genre" :genres="genres" />
         </li>
       </ul>
+      
+      <p v-else>No genres found.</p>
 
       <div :class="[bgColour, 'separator']"></div>
     </section>
@@ -87,6 +109,14 @@ export default {
 
     avatar() {
       return `/avatars/${this.artist.avatar}`
+    },
+
+    hasLinks() {
+      if ( ! this.artist.links) {
+        return false;
+      }
+
+      return this.artist.links.length > 0;
     }
   }
 }
@@ -114,6 +144,19 @@ export default {
 
   img#avatar {
     @apply mt-2 rounded-full border-solid border-4;
+  }
+  
+  ul#socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+  }
+  ul#socials li {
+    margin: 0.5em 0;
+    justify-self: center;
   }
 }
 </style>
