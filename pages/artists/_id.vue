@@ -1,7 +1,7 @@
 <template>
   <div class="dual-section" :style="cssVariables">
     <section class="left-section">
-      <h2 :class="colours">
+      <h2>
         Socials
       </h2>
 
@@ -17,7 +17,7 @@
 
       <div :class="[bgColour, 'separator']"></div>
 
-      <h2 :class="colours">
+      <h2>
         Tools
       </h2>
 
@@ -31,7 +31,7 @@
 
       <div :class="[bgColour, 'separator']"></div>
 
-      <h2 :class="colours">
+      <h2>
         Roles
       </h2>
 
@@ -45,7 +45,7 @@
 
       <div :class="[bgColour, 'separator']"></div>
 
-      <h2 :class="colours">
+      <h2>
         Genres
       </h2>
 
@@ -131,13 +131,6 @@ export default {
     aliases() {
       return this.artist.aliases.join(', ')
     },
-    
-    colours() {
-      return [
-        `text-${this.artist.colour}-500`,
-        `border-${this.artist.colour}-500`
-      ];
-    },
 
     bgColour() {
       return `bg-${this.artist.colour}-500`;
@@ -171,7 +164,6 @@ export default {
   h1 {
     @apply text-5xl pb-6 border-b-2 border-solid mb-4;
   }
-
   h1 span {
     font-size: 0.5em !important;
     margin-left: 1em;
@@ -184,6 +176,11 @@ export default {
 
   h3 {
     @apply text-xl mb-4;
+  }
+
+  h1, h2, h3 {
+    color: var(--text-colour);
+    border-color: var(--text-colour);
   }
 
   div.separator {
