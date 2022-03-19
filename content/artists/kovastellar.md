@@ -1,9 +1,7 @@
 ---
 name: Kovastellar
 aliases:
-  - Rob
-  - MrMuffinMusic
-  - ThatRobertDude
+  - Kova
 dob: "Unknown"
 roles:
   - musician
