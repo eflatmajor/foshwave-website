@@ -78,7 +78,7 @@
 export default {
   data() {
     return {
-      colours: {
+      artistColours: {
         "red": "#EF4444",
         "orange": "#F97316",
         "amber": "#F59E0B",
@@ -124,7 +124,7 @@ export default {
   computed: {
     cssVariables() {
       return {
-        "--text-colour": this.colours[this.artist.colour]
+        "--text-colour": this.artistColours[this.artist.colour]
       };
     },
 
@@ -269,5 +269,9 @@ div.nuxt-content p {
 div.nuxt-content p a {
   color: var(--text-colour);
   font-weight: bold;
+}
+
+div.nuxt-content p a:hover {
+  text-decoration: underline;
 }
 </style>
