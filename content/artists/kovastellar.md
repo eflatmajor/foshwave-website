@@ -5,6 +5,7 @@ aliases:
 dob: "Unknown"
 roles:
   - musician
+  - artist
 genres:
   - dnb
   - house
@@ -47,7 +48,7 @@ I started producing in 2015 under a different alias, then took a hiatus in 2018 
 
 ## My Music
 
-I make a variety of genres spanning from Drum 'n' Bass, to Lo-Fi, to upbeat Instrumental-based tracks.
+I make a variety of genres spanning from Drum 'n' Bass, to Lofi, to upbeat Instrumental-based tracks.
 
 All of my music is related to space and tells a small part of a large story that will get revealed over time.
 
