@@ -69,7 +69,7 @@
         <span :class="`text-${artist.colour}-600`" v-if="hasAliases">aka {{ aliases }}</span>
       </h1>
 
-      <nuxt-content :document="artist" :class="textColour" />
+      <nuxt-content :document="artist" />
     </section>
   </div>
 </template>
@@ -137,10 +137,6 @@ export default {
         `text-${this.artist.colour}-500`,
         `border-${this.artist.colour}-500`
       ];
-    },
-
-    textColour() {
-      return `text-${this.artist.colour}-500`;
     },
 
     bgColour() {
@@ -255,6 +251,11 @@ export default {
 </style>
 
 <style lang="postcss">
+div.nuxt-content h2,
+div.nuxt-content h3 {
+  color: var(--text-colour);
+}
+
 div.nuxt-content h2 {
   @apply text-3xl mb-4;
 }
