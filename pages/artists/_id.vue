@@ -1,63 +1,64 @@
 <template>
   <div class="dual-section" :style="cssVariables">
     <section class="left-section">
-      <h2>
-        Socials
-      </h2>
+      <div v-if="hasLinks">
+        <h2>
+          Socials
+        </h2>
 
-      <ul id="socials" class="w-full" v-if="hasLinks">
-        <li v-for="link in artist.links" :key="link.slug">
-          <a :href="link.url" :title="`Visit ${link.name}.`" target="_blank">
-            <img :src="`/logos/${link.icon}.png`" height="32px" width="32px" :alt="link.name" />
-          </a>
-        </li>
-      </ul>
+        <ul id="socials" class="w-full">
+          <li v-for="link in artist.links" :key="link.slug">
+            <a :href="link.url" :title="`Visit ${link.name}.`" target="_blank">
+              <img :src="`/logos/${link.icon}.png`" height="32px" width="32px" :alt="link.name" />
+            </a>
+          </li>
+        </ul>
 
-      <p v-else>No socials found.</p>
+        <div :class="[bgColour, 'separator']"></div>
+      </div>
 
-      <div :class="[bgColour, 'separator']"></div>
+      <div v-if="hasTools">
+        <h2>
+          Tools
+        </h2>
 
-      <h2>
-        Tools
-      </h2>
+        <ul id="tools">
+          <li v-for="tool in artist.tools" :key="tool">
+            <tool :tool="tool" :tools="tools" />
+          </li>
+        </ul>
 
-      <ul id="tools" v-if="artist.tools.length">
-        <li v-for="tool in artist.tools" :key="tool">
-          <tool :tool="tool" :tools="tools" />
-        </li>
-      </ul>
 
-      <p v-else>No tools found.</p>
+        <div :class="[bgColour, 'separator']"></div>
+      </div>
 
-      <div :class="[bgColour, 'separator']"></div>
+      <div v-if="hasRoles">
+        <h2>
+          Roles
+        </h2>
 
-      <h2>
-        Roles
-      </h2>
+        <ul id="roles">
+          <li v-for="role in artist.roles" :key="role">
+            <role :role="role" :roles="roles" />
+          </li>
+        </ul>
 
-      <ul id="roles" v-if="artist.roles.length">
-        <li v-for="role in artist.roles" :key="role">
-          <role :role="role" :roles="roles" />
-        </li>
-      </ul>
+        <div :class="[bgColour, 'separator']"></div>
+      </div>
 
-      <p v-else>No roles found.</p>
+      <div v-if="hasGenres">
+        <h2>
+          Genres
+        </h2>
 
-      <div :class="[bgColour, 'separator']"></div>
+        <ul id="genres" v-if="artist.genres.length">
+          <li v-for="genre in artist.genres" :key="genre">
+            <genre :genre="genre" :genres="genres" />
+          </li>
+        </ul>
 
-      <h2>
-        Genres
-      </h2>
-
-      <ul id="genres" v-if="artist.genres.length">
-        <li v-for="genre in artist.genres" :key="genre">
-          <genre :genre="genre" :genres="genres" />
-        </li>
-      </ul>
-      
-      <p v-else>No genres found.</p>
-
-      <div :class="[bgColour, 'separator']"></div>
+        <div :class="[bgColour, 'separator']"></div>
+      </div>
     </section>
 
     <section class="right-section">
@@ -154,6 +155,31 @@ export default {
       }
 
       return this.artist.aliases.length > 0;
+    },
+
+    hasGenres() {
+      if ( ! this.artist.genres) {
+        return false;
+      }
+
+      return this.artist.genres.length > 0;
+    },
+
+    hasRoles() {
+      if ( ! this.artist.roles) {
+        return false;
+      }
+
+      return this.artist.roles.length > 0;
+    },
+
+
+    hasTools() {
+      if ( ! this.artist.tools) {
+        return false;
+      }
+
+      return this.artist.tools.length > 0;
     }
   }
 }
